@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Mobile Platform: Educational Prototype",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1380,
+      650
+    ]
+  },
+  "components": [
+    {
+      "id": "mobile",
+      "type": "frontend",
+      "label": "Flutter Mobile App",
+      "sublabel": "Mobile client",
+      "pos": [
+        80,
+        221
+      ],
+      "size": [
+        230,
+        80
+      ]
+    },
+    {
+      "id": "identity",
+      "type": "security",
+      "label": "Keycloak Authentication",
+      "sublabel": "Authentication layer",
+      "pos": [
+        550,
+        65
+      ],
+      "size": [
+        230,
+        80
+      ]
+    },
+    {
+      "id": "rest",
+      "type": "backend",
+      "label": "FastAPI REST API",
+      "sublabel": "API layer / authorization",
+      "pos": [
+        550,
+        221
+      ],
+      "size": [
+        230,
+        80
+      ]
+    },
+    {
+      "id": "relational",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Relational data",
+      "pos": [
+        1060,
+        182
+      ],
+      "size": [
+        230,
+        80
+      ]
+    },
+    {
+      "id": "documents",
+      "type": "database",
+      "label": "MongoDB",
+      "sublabel": "Document data",
+      "pos": [
+        1060,
+        306
+      ],
+      "size": [
+        230,
+        80
+      ]
+    },
+    {
+      "id": "maps",
+      "type": "external",
+      "label": "Leaflet / Maps Service",
+      "sublabel": "flutter_map / OpenStreetMap",
+      "pos": [
+        80,
+        65
+      ],
+      "size": [
+        230,
+        80
+      ]
+    },
+    {
+      "id": "compose",
+      "type": "cloud",
+      "label": "Docker Compose",
+      "sublabel": "Development orchestration",
+      "pos": [
+        80,
+        435
+      ],
+      "size": [
+        230,
+        80
+      ]
+    },
+    {
+      "id": "containers",
+      "type": "cloud",
+      "label": "Docker",
+      "sublabel": "Local service containers",
+      "pos": [
+        550,
+        435
+      ],
+      "size": [
+        230,
+        80
+      ]
+    },
+    {
+      "id": "localgit",
+      "type": "backend",
+      "label": "Git",
+      "sublabel": "Local source control",
+      "pos": [
+        80,
+        565
+      ],
+      "size": [
+        230,
+        64
+      ]
+    },
+    {
+      "id": "remotehub",
+      "type": "external",
+      "label": "GitHub",
+      "sublabel": "External source control",
+      "pos": [
+        550,
+        565
+      ],
+      "size": [
+        230,
+        64
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "security-group",
+      "label": "User device / untrusted client",
+      "wraps": [
+        "mobile"
+      ],
+      "pad": 24
+    },
+    {
+      "kind": "security-group",
+      "label": "Identity boundary",
+      "wraps": [
+        "identity"
+      ],
+      "pad": 24
+    },
+    {
+      "kind": "security-group",
+      "label": "Application boundary",
+      "wraps": [
+        "rest"
+      ],
+      "pad": 24
+    },
+    {
+      "kind": "security-group",
+      "label": "Private data layer",
+      "wraps": [
+        "relational",
+        "documents"
+      ],
+      "pad": 24
+    },
+    {
+      "kind": "security-group",
+      "label": "External maps boundary",
+      "wraps": [
+        "maps"
+      ],
+      "pad": 24
+    },
+    {
+      "kind": "region",
+      "label": "Development infrastructure",
+      "wraps": [
+        "compose",
+        "containers"
+      ],
+      "pad": 24
+    }
+  ],
+  "connections": [
+    {
+      "id": "login",
+      "from": "mobile",
+      "to": "identity",
+      "label": "Sign in / tokens",
+      "variant": "security",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "requests",
+      "from": "mobile",
+      "to": "rest",
+      "label": "HTTP + bearer token",
+      "variant": "emphasis",
+      "labelDy": 28
+    },
+    {
+      "id": "keys",
+      "from": "rest",
+      "to": "identity",
+      "label": "Fetch signing keys",
+      "variant": "security",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "labelDy": -49
+    },
+    {
+      "id": "sql",
+      "from": "rest",
+      "to": "relational",
+      "label": "SQL read / write",
+      "variant": "dashed"
+    },
+    {
+      "id": "docs",
+      "from": "rest",
+      "to": "documents",
+      "label": "Document read / write",
+      "variant": "dashed"
+    },
+    {
+      "id": "tiles",
+      "from": "mobile",
+      "to": "maps",
+      "label": "Maps / tiles",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "labelDy": -49
+    },
+    {
+      "id": "orchestrate",
+      "from": "compose",
+      "to": "containers",
+      "label": "Configure / start",
+      "variant": "dashed"
+    },
+    {
+      "id": "source",
+      "from": "localgit",
+      "to": "remotehub",
+      "label": "Push / pull",
+      "variant": "dashed"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "rose",
+      "title": "Educational prototype: intended flows",
+      "items": [
+        "PKCE and API helpers are not wired to the map UI. SQL/document arrows are planned; /locations returns a fixture.",
+        "Local HTTP is development-only. JWT issuer, audience and signature are checked; boundaries describe intended trust separation."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Explore the actual source",
+      "items": [
+        "Select any component to view its responsibility and open source code on main. flutter_map renders OpenStreetMap tiles.",
+        "Compose defines four local services. GitHub is an external source-control trust domain. This is not production-ready."
+      ]
+    }
+  ]
+}

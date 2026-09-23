@@ -1,0 +1,147 @@
+{
+  "repository": "https://github.com/Brisgregorio/Practicas_Integradora_230362",
+  "branch": "main",
+  "scope": "Educational prototype. Local paths inspected; main links are publishing targets, not a claim of remote availability.",
+  "nodes": {
+    "mobile": {
+      "name": "Flutter Mobile App",
+      "technology": "Flutter / Dart / MaterialApp",
+      "responsibility": "Starts a MaterialApp and displays MapScreen. Authentication and API helpers exist but are not wired to this screen.",
+      "sources": [
+        {
+          "path": "Practica02/prototype/mobile/lib/main.dart",
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/mobile/lib/main.dart",
+          "label": "Open source code"
+        },
+        {
+          "path": "Practica02/prototype/mobile/lib/services/auth_service.dart",
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/mobile/lib/services/auth_service.dart",
+          "label": "Open source code"
+        },
+        {
+          "path": "Practica02/prototype/mobile/lib/services/api_service.dart",
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/mobile/lib/services/api_service.dart",
+          "label": "Open source code"
+        }
+      ]
+    },
+    "identity": {
+      "name": "Keycloak Authentication",
+      "technology": "Keycloak / OpenID Connect / PyJWT",
+      "responsibility": "Defines the integradora realm and public flutter-mobile client with S256 PKCE. Backend code validates JWT signature, expiry, issuer, audience and authorized client. Login UI and callback handling remain exercises.",
+      "sources": [
+        {
+          "path": "Practica02/prototype/keycloak/realm-export.json",
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/keycloak/realm-export.json",
+          "label": "Open source code"
+        },
+        {
+          "path": "Practica02/prototype/backend/app/auth/keycloak.py",
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/backend/app/auth/keycloak.py",
+          "label": "Open source code"
+        }
+      ]
+    },
+    "rest": {
+      "name": "FastAPI REST API",
+      "technology": "FastAPI / Uvicorn / Python",
+      "responsibility": "Registers public /health and protected /locations routes. Locations returns a fixed Mexico City fixture; no database queries are implemented.",
+      "sources": [
+        {
+          "path": "Practica02/prototype/backend/app/main.py",
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/backend/app/main.py",
+          "label": "Open source code"
+        },
+        {
+          "path": "Practica02/prototype/backend/app/routes/locations.py",
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/backend/app/routes/locations.py",
+          "label": "Open source code"
+        }
+      ]
+    },
+    "relational": {
+      "name": "PostgreSQL",
+      "technology": "PostgreSQL / SQLAlchemy / psycopg",
+      "responsibility": "Creates a SQLAlchemy engine from POSTGRES_URL and a session dependency. Intended relational persistence; no tables or queries yet.",
+      "sources": [
+        {
+          "path": "Practica02/prototype/backend/app/database/postgresql.py",
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/backend/app/database/postgresql.py",
+          "label": "Open source code"
+        }
+      ]
+    },
+    "documents": {
+      "name": "MongoDB",
+      "technology": "MongoDB / Motor",
+      "responsibility": "Creates a Motor client from MONGODB_URL and selects MONGODB_DATABASE. Intended document persistence; no queries yet.",
+      "sources": [
+        {
+          "path": "Practica02/prototype/backend/app/database/mongodb.py",
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/backend/app/database/mongodb.py",
+          "label": "Open source code"
+        }
+      ]
+    },
+    "maps": {
+      "name": "Leaflet / Maps Service",
+      "technology": "flutter_map / latlong2 / OpenStreetMap",
+      "responsibility": "Displays an interactive map, static marker and attribution using OpenStreetMap tiles. The implemented Flutter package is flutter_map, not Leaflet.",
+      "sources": [
+        {
+          "path": "Practica02/prototype/mobile/lib/screens/map_screen.dart",
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/mobile/lib/screens/map_screen.dart",
+          "label": "Open source code"
+        }
+      ]
+    },
+    "compose": {
+      "name": "Docker Compose",
+      "technology": "Docker Compose / YAML",
+      "responsibility": "Defines api, postgres, mongodb and keycloak, development environment variables, local port bindings, realm import and database volumes.",
+      "sources": [
+        {
+          "path": "Practica02/prototype/docker-compose.yml",
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/docker-compose.yml",
+          "label": "Open source code"
+        }
+      ]
+    },
+    "containers": {
+      "name": "Docker",
+      "technology": "Docker / Python 3.12 image",
+      "responsibility": "Builds the API image, installs declared Python requirements during a future build, and launches app.main:app with Uvicorn.",
+      "sources": [
+        {
+          "path": "Practica02/prototype/backend/Dockerfile",
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/backend/Dockerfile",
+          "label": "Open source code"
+        }
+      ]
+    },
+    "localgit": {
+      "name": "Git",
+      "technology": "Git",
+      "responsibility": "Version-controls the educational prototype folder. This link targets the user-specified main publishing branch; local files are currently untracked.",
+      "sources": [
+        {
+          "path": "Practica02/prototype",
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/tree/main/Practica02/prototype",
+          "label": "Open source code"
+        }
+      ]
+    },
+    "remotehub": {
+      "name": "GitHub",
+      "technology": "GitHub",
+      "responsibility": "Hosts the repository and its source history. External source-control trust domain; publication is separate from local generation.",
+      "sources": [
+        {
+          "path": ".",
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362",
+          "label": "Open source code"
+        }
+      ]
+    }
+  }
+}
