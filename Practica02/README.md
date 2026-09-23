@@ -25,7 +25,7 @@ El modelo representa la arquitectura inicial de una aplicación móvil y permite
 [Consultar el diagrama arquitectónico interactivo](https://brisgregorio.github.io/Practicas_Integradora_230362/Practica02/architecture/initial-architecture.html)
 
 ## Evidencias
-[📄 Evidencias](./Practica02/EVIDENCIAS_Archify.pdf)
+[📄 Evidencias](https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/EVIDENCIAS_Archify.pdf)
 
 Al seleccionar un componente dentro del diagrama se muestra su tecnología, responsabilidad, ubicación y un enlace para consultar el archivo de código correspondiente.
 
