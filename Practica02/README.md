@@ -20,7 +20,7 @@ En esta práctica se realizó la instalación y configuración de Archify para t
 
 ## Modelo interactivo
 
-[Consultar el diagrama arquitectónico interactivo](./architecture-mobile-platform.html)
+[Consultar el diagrama arquitectónico interactivo](https://brisgregorio.github.io/Practicas_Integradora_230362/Practica02/architecture/initial-architecture.html)
 
 ## Archivos generados
 
