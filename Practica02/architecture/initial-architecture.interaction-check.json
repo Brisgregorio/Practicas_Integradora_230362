@@ -1,0 +1,158 @@
+{
+  "status": "pass",
+  "artifact": {
+    "sha256": "d05f15e3ba530ae1f31690fc4146f8492dfd28c36d5876a9012faf2982e7ac1a",
+    "bytes": 821562
+  },
+  "components": 10,
+  "observations": [
+    {
+      "id": "mobile",
+      "passed": true,
+      "links": [
+        {
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/mobile/lib/main.dart",
+          "label": "Open source code",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/mobile/lib/services/auth_service.dart",
+          "label": "Open source code",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/mobile/lib/services/api_service.dart",
+          "label": "Open source code",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      ]
+    },
+    {
+      "id": "identity",
+      "passed": true,
+      "links": [
+        {
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/keycloak/realm-export.json",
+          "label": "Open source code",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/backend/app/auth/keycloak.py",
+          "label": "Open source code",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      ]
+    },
+    {
+      "id": "rest",
+      "passed": true,
+      "links": [
+        {
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/backend/app/main.py",
+          "label": "Open source code",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/backend/app/routes/locations.py",
+          "label": "Open source code",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      ]
+    },
+    {
+      "id": "relational",
+      "passed": true,
+      "links": [
+        {
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/backend/app/database/postgresql.py",
+          "label": "Open source code",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      ]
+    },
+    {
+      "id": "documents",
+      "passed": true,
+      "links": [
+        {
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/backend/app/database/mongodb.py",
+          "label": "Open source code",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      ]
+    },
+    {
+      "id": "maps",
+      "passed": true,
+      "links": [
+        {
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/mobile/lib/screens/map_screen.dart",
+          "label": "Open source code",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      ]
+    },
+    {
+      "id": "compose",
+      "passed": true,
+      "links": [
+        {
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/docker-compose.yml",
+          "label": "Open source code",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      ]
+    },
+    {
+      "id": "containers",
+      "passed": true,
+      "links": [
+        {
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/blob/main/Practica02/prototype/backend/Dockerfile",
+          "label": "Open source code",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      ]
+    },
+    {
+      "id": "localgit",
+      "passed": true,
+      "links": [
+        {
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362/tree/main/Practica02/prototype",
+          "label": "Open source code",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      ]
+    },
+    {
+      "id": "remotehub",
+      "passed": true,
+      "links": [
+        {
+          "url": "https://github.com/Brisgregorio/Practicas_Integradora_230362",
+          "label": "Open source code",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      ]
+    }
+  ],
+  "keyboardActivation": true,
+  "escapeCloses": true,
+  "javascriptErrors": [],
+  "scope": "Physical mouse selection of all nodes and keyboard activation; exact URLs, visible details and new-tab attributes checked. Remote URLs were not fetched."
+}

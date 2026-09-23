@@ -1,0 +1,131 @@
+{
+  "diagram_type": "architecture",
+  "output": "initial-architecture.html",
+  "specification": {
+    "sha256": "20b6906657ec90980ab7680fee5f66a0f1fed423aaa4091adfd91ab1fa6af864",
+    "bytes": 5919
+  },
+  "sourceMetadata": {
+    "sha256": "9c7a76de7403b4762d2adcc64e2ab94fc8b6c8b36dd49534b9c3aa4aed770508",
+    "bytes": 6972
+  },
+  "artifact": {
+    "sha256": "d05f15e3ba530ae1f31690fc4146f8492dfd28c36d5876a9012faf2982e7ac1a",
+    "bytes": 821562
+  },
+  "archifyBaseDelivery": {
+    "schemaVersion": 1,
+    "ok": true,
+    "command": "deliver",
+    "type": "architecture",
+    "input": "C:\\Users\\grego\\Desktop\\ebfW\\Practicas_Integradora_230362\\Practica02\\architecture\\initial-architecture.json",
+    "output": "C:\\Users\\grego\\Desktop\\ebfW\\Practicas_Integradora_230362\\Practica02\\architecture\\initial-architecture.archify.html",
+    "specification": {
+      "sha256": "20b6906657ec90980ab7680fee5f66a0f1fed423aaa4091adfd91ab1fa6af864",
+      "bytes": 5919
+    },
+    "artifact": {
+      "sha256": "36941c5de7dda7d13e8dfc96664075ec447b8dff4be6d8fa66413450da9309fc",
+      "bytes": 812899
+    },
+    "validation": {
+      "checksPassed": 9,
+      "checkCount": 9,
+      "compositionProfile": "showcase",
+      "compositionStatus": "pass",
+      "errors": 0,
+      "warnings": 0
+    }
+  },
+  "finalArtifactCheck": {
+    "ok": true,
+    "file": "C:\\Users\\grego\\Desktop\\ebfW\\Practicas_Integradora_230362\\Practica02\\architecture\\initial-architecture.candidate.html",
+    "checks": [
+      {
+        "name": "single_svg",
+        "ok": true,
+        "details": [
+          "found 1 <svg> block(s)"
+        ]
+      },
+      {
+        "name": "finite_svg",
+        "ok": true,
+        "details": []
+      },
+      {
+        "name": "orthogonal_arrows",
+        "ok": true,
+        "details": []
+      },
+      {
+        "name": "label_route_clearance",
+        "ok": true,
+        "details": []
+      },
+      {
+        "name": "relationship_crossings",
+        "ok": true,
+        "details": []
+      },
+      {
+        "name": "relationship_corridors",
+        "ok": true,
+        "details": []
+      },
+      {
+        "name": "container_border_runs",
+        "ok": true,
+        "details": []
+      },
+      {
+        "name": "route_rhythm",
+        "ok": true,
+        "details": []
+      },
+      {
+        "name": "legend_clearance",
+        "ok": true,
+        "details": []
+      }
+    ],
+    "composition": {
+      "schemaVersion": 1,
+      "profile": "showcase",
+      "status": "pass",
+      "summary": {
+        "errors": 0,
+        "warnings": 0
+      },
+      "metrics": {
+        "properCrossings": 0,
+        "ambiguousCorridors": 0,
+        "containerBorderRuns": 0,
+        "labelRouteClearanceIssues": 0,
+        "minLabelRouteClearance": 22,
+        "desktopReadabilityIssues": 0,
+        "minProjectedNodeTextPx": null,
+        "maxBends": 2,
+        "routesOverSuggestedBends": 0,
+        "maxStretch": 1,
+        "routesOverSuggestedStretch": 0,
+        "minSegmentPx": 32,
+        "minInteriorSegmentPx": 32,
+        "shortSegmentCount": 0,
+        "shortEndpointSegmentCount": 0,
+        "shortInteriorSegmentCount": 0,
+        "microSegmentCount": 0
+      },
+      "suggestedLimits": {
+        "bendsPerRelationship": 2,
+        "stretch": 1.35,
+        "segmentPx": 16,
+        "microSegmentPx": 8
+      },
+      "issues": []
+    }
+  },
+  "componentsWithLinks": 10,
+  "distinctSourceUrls": 14,
+  "scope": "Archify delivered the base. A reproducible source-passport extension was applied; the final extended HTML passed the Archify artifact checker. Browser evidence is separate."
+}

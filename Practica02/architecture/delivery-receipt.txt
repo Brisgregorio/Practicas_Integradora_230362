@@ -1,0 +1,20 @@
+diagram_type: architecture
+output: Practica02/architecture/initial-architecture.html
+specification_sha256: 20b6906657ec90980ab7680fee5f66a0f1fed423aaa4091adfd91ab1fa6af864
+artifact_sha256: d05f15e3ba530ae1f31690fc4146f8492dfd28c36d5876a9012faf2982e7ac1a
+artifact_bytes: 821562
+validation: 9/9 showcase, 0 errors, 0 warnings
+browser_evidence: passed
+visual_review: passed
+correction_rounds: 1
+components_with_source_links: 10/10
+explicitly_required_urls_present: 12/12
+distinct_urls_including_mobile_helpers: 14
+interaction_checks: All 10 nodes selected by mouse; details, paths, link labels and target=_blank checked; keyboard activation and Escape passed; no JavaScript errors.
+visual_review_scope: Default desktop screenshot and source passport inspected in light/dark themes. Automated containment passed at all four required desktop sizes.
+publication_scope: User-supplied main URLs are publishing targets. Remote availability was not verified. No commit or push performed.
+build_scope: Stock Archify JSON validated and base delivered; local source-passport extension applied and final HTML passed the Archify artifact checker. Final hash is separate from stock base-delivery hash.
+editable_inputs: initial-architecture.json, initial-architecture.sources.json, initial-architecture.viewer.js
+rebuild: node Practica02/architecture/initial-architecture.build.mjs <installed-archify-directory>
+interaction_check: node Practica02/architecture/initial-architecture.check.mjs <installed-archify-directory>
+visual_check: node <installed-archify-directory>/bin/archify.mjs visual-check Practica02/architecture/initial-architecture.html --json
