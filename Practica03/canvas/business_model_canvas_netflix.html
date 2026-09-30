@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>Business Model Canvas - Netflix</title>
+  <style>
+    :root{--bg:#101114;--panel:#1b1c21;--text:#f4f4f6;--muted:#b3b4bf;--line:#34353e;--red:#ff3545;--soft:#302025;--shadow:0 18px 60px #0003}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}body.light{--bg:#f3f3f6;--panel:#fff;--text:#202127;--muted:#60616e;--line:#dcdce4;--red:#d91c30;--soft:#fff0f1;--shadow:0 18px 60px #2626380a}
+    button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offset:5px}
+    .page{max-width:1500px;margin:auto;padding:38px 44px 24px}.top{display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-size:22px;font-weight:900;letter-spacing:3px;color:var(--red)}.edition{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);border-left:1px solid var(--line);padding-left:18px;margin-left:18px}.tools{display:flex;gap:10px}.tool{border:1px solid var(--line);border-radius:9px;background:var(--panel);color:var(--text);padding:9px 14px;font-size:13px}.tool:hover{border-color:var(--red)}
+    header{margin:45px 0 29px}.eyebrow{color:var(--red);font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase}h1{font-size:clamp(25px,3vw,43px);letter-spacing:-1.6px;line-height:1.15;margin:12px 0}header p{color:var(--muted);font-size:17px;margin:0}.intro{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:17px}.devices{display:flex;flex-wrap:wrap;gap:8px}.chip{font-size:11px;color:var(--muted);padding:5px 10px;border:1px solid var(--line);border-radius:20px}.hint{font-size:12px;color:var(--muted);margin:0}
+    .canvas{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));grid-template-rows:repeat(2,minmax(225px,auto)) minmax(170px,auto);gap:12px}.block{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:22px 20px;box-shadow:var(--shadow);transition:transform .2s,border-color .2s,background .2s;display:flex;flex-direction:column;min-width:0}.block:hover{transform:translateY(-4px);border-color:var(--red)}.partners{grid-area:1/1/3/3}.activities{grid-area:1/3/2/5}.resources{grid-area:2/3/3/5}.value{grid-area:1/5/3/7;background:linear-gradient(150deg,var(--soft),var(--panel));border-color:var(--red)}.relations{grid-area:1/7/2/9}.channels{grid-area:2/7/3/9}.segments{grid-area:1/9/3/11}.costs{grid-area:3/1/4/6}.income{grid-area:3/6/4/11}.card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}.symbol{color:var(--red);font-size:23px;font-weight:500;line-height:1}.number{color:var(--muted);font-size:11px;font-variant-numeric:tabular-nums}h2{font-size:16px;line-height:1.25;letter-spacing:-.3px;margin:0 0 16px}.block ul{padding:0;margin:0;list-style:none}.block li{font-size:13px;color:var(--muted);position:relative;padding-left:13px;margin:0 0 10px}.block li:before{content:"";position:absolute;left:0;top:9px;width:4px;height:4px;border-radius:50%;background:var(--red)}.value .promise{font-size:25px;line-height:1.25;letter-spacing:-.7px;margin:8px 0 25px;font-weight:650}.detail{margin-top:auto;padding-top:14px}.detail summary{list-style:none;cursor:pointer;font-size:11px;color:var(--muted);display:flex;justify-content:space-between;gap:10px}.detail summary::-webkit-details-marker{display:none}.detail summary:after{content:"+";color:var(--red);font-size:16px;line-height:1}.detail[open] summary:after{content:"−"}.detail p{font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;margin:12px 0 0}.wide-list{display:flex;flex-wrap:wrap;gap:0 28px}.foot{display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:11px;padding:24px 0}.foot p{margin:0}.sources{border-top:1px solid var(--line);padding-top:14px;color:var(--muted);font-size:11px}.sources summary{cursor:pointer}.sources p{max-width:850px}.sources a{color:var(--muted);text-underline-offset:3px}.status{color:var(--red)}
+    @media(min-width:1600px){.canvas{grid-template-rows:repeat(2,minmax(245px,auto)) minmax(180px,auto)}}
+    @media(max-width:1100px){.page{padding:28px 25px}.canvas{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none}.block{grid-area:auto;min-height:220px}.value{grid-column:1/-1;grid-row:1;min-height:250px}.value .promise{max-width:600px}.income{grid-column:1/-1}.intro{align-items:flex-start;flex-direction:column}.wide-list{display:block}}
+    @media(max-width:600px){.page{padding:22px 16px}.edition{display:none}.brand{font-size:19px}.tools{gap:6px}.tool{padding:8px 10px;font-size:11px}header{margin:32px 0 24px}h1{letter-spacing:-.8px}header p{font-size:15px}.canvas{grid-template-columns:1fr}.block,.value,.income{grid-column:auto;grid-row:auto;min-height:auto;padding:21px}.value .promise{font-size:25px}.foot{flex-direction:column;gap:7px}.card-top{margin-bottom:12px}}
+    @media(prefers-reduced-motion:reduce){*{transition:none!important}.block:hover{transform:none}}
+    @media print{body,body.light{--bg:#fff;--panel:#fff;--text:#161616;--muted:#444;--line:#ccc;--red:#b20710;--soft:#fff} @page{size:A3 landscape;margin:12mm}.page{max-width:none;padding:0}.tools,.intro .hint,.sources,.detail{display:none}header{margin:15px 0 20px}.canvas{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));grid-template-rows:repeat(2,minmax(190px,auto)) minmax(140px,auto)}.block{box-shadow:none;break-inside:avoid;min-height:0;padding:16px}.partners{grid-area:1/1/3/3}.activities{grid-area:1/3/2/5}.resources{grid-area:2/3/3/5}.value{grid-area:1/5/3/7}.relations{grid-area:1/7/2/9}.channels{grid-area:2/7/3/9}.segments{grid-area:1/9/3/11}.costs{grid-area:3/1/4/6}.income{grid-area:3/6/4/11}}
+    /* Refinamientos de la versión final y selección accesible. */
+    .page{max-width:1640px}header{padding-bottom:24px;border-bottom:1px solid var(--line)}
+    .canvas{gap:14px;grid-template-rows:repeat(2,minmax(280px,auto)) minmax(215px,auto)}
+    .block{border-radius:16px;transition:transform .22s,border-color .22s,box-shadow .22s}
+    .block:hover{transform:translateY(-3px);box-shadow:0 10px 30px #0002}
+    .block.selected{border-color:var(--red);box-shadow:0 0 0 2px var(--red),var(--shadow)}
+    .card-top{margin-bottom:18px}.number{letter-spacing:1px}
+    h2{font-size:18px;margin-bottom:18px}.block li{font-size:13px;line-height:1.55;margin-bottom:12px}
+    .block li strong{font-weight:600;color:var(--text)}
+    .value .promise{font-size:clamp(24px,2.1vw,32px);margin:6px 0 24px}
+    .select-block{border:0;background:transparent;color:inherit;padding:0;text-align:left;line-height:inherit;font:inherit;font-weight:700;cursor:pointer;width:100%;display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+    .select-block:after{content:"○";color:var(--muted);font-size:15px;flex-shrink:0}.select-block[aria-pressed="true"]:after{content:"●";color:var(--red)}
+    .selection-bar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 16px;margin:0 0 18px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+    .selection-bar p{margin:0;color:var(--muted);font-size:12px}.selection-bar .tool{font-size:11px;padding:6px 10px;flex-shrink:0}.tool:disabled{cursor:default;opacity:.45}
+    .wide-list{display:grid;grid-template-columns:1fr 1fr;gap:0 22px}
+    .detail summary{font-size:12px;min-height:28px;align-items:center}.detail p{line-height:1.6}
+    @media(max-width:1100px){.canvas{grid-template-rows:none}.value .promise{max-width:650px}.wide-list{display:block}}
+    @media(max-width:600px){.selection-bar{align-items:flex-start}.block li{font-size:14px}.value .promise{font-size:28px}}
+    @media print{.selection-bar{display:none}.block.selected{box-shadow:none}.select-block:after{display:none}.canvas{gap:9px;grid-template-rows:repeat(2,minmax(225px,auto)) minmax(175px,auto)}h2{font-size:15px}.block li{font-size:11px;margin-bottom:8px}.value .promise{font-size:24px}.wide-list{display:block}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="top"><div><span class="brand">NETFLIX</span><span class="edition">Modelo de negocio / versión final</span></div><div class="tools"><button class="tool" id="theme" type="button" aria-pressed="false">Tema claro</button><button class="tool" id="print" type="button">Imprimir</button></div></div>
+    <header><span class="eyebrow">Entretenimiento · Streaming · Tecnología</span><h1>Business Model Canvas - Netflix</h1><p>Modelo de negocio de una plataforma multiplataforma</p></header>
+    <div class="intro"><div class="devices" aria-label="Plataformas compatibles"><span class="chip">Android</span><span class="chip">iOS / iPadOS</span><span class="chip">Computadoras / Web</span><span class="chip">Smart TV</span><span class="chip">Consolas</span><span class="chip">Reproductores multimedia</span></div><p class="hint">Selecciona un bloque · Despliega su contexto</p></div>
+    <div class="selection-bar"><p id="selection-status" role="status" aria-live="polite">Selecciona una tarjeta o su título para destacar el bloque.</p><button class="tool" id="clear-selection" type="button" disabled>Quitar selección</button></div>
+    <section class="canvas" aria-label="Business Model Canvas de Netflix">
+      <article class="block partners"><div class="card-top"><span class="symbol" aria-hidden="true">↔</span><span class="number">01 / ALIANZAS</span></div><h2>Socios clave</h2><ul><li><strong>Productoras y estudios:</strong> creación de series y películas.</li><li><strong>Titulares de derechos:</strong> licencias para el catálogo.</li><li><strong>Talento creativo:</strong> guionistas, directores y artistas.</li><li><strong>Fabricantes y plataformas:</strong> integración de aplicaciones.</li><li><strong>Operadores de internet:</strong> distribución y paquetes comerciales.</li><li><strong>Socios publicitarios:</strong> anunciantes y tecnología de anuncios.</li></ul><details class="detail"><summary>Ver contexto</summary><p>Los acuerdos de contenido establecen territorios y periodos de disponibilidad. Los socios tecnológicos facilitan el acceso en dispositivos compatibles.</p></details></article>
+      <article class="block activities"><div class="card-top"><span class="symbol" aria-hidden="true">▷</span><span class="number">02 / EJECUCIÓN</span></div><h2>Actividades clave</h2><ul><li>Producir originales y adquirir licencias.</li><li>Desarrollar apps y experiencia web.</li><li>Distribuir video por Internet.</li><li>Mejorar recomendaciones y personalización.</li><li>Realizar marketing y gestionar publicidad.</li></ul><details class="detail"><summary>Ver contexto</summary><p>Incluye adaptar contenido con subtítulos y doblaje, mantener la reproducción y atraer y retener suscriptores.</p></details></article>
+      <article class="block resources"><div class="card-top"><span class="symbol" aria-hidden="true">▤</span><span class="number">03 / CAPACIDADES</span></div><h2>Recursos clave</h2><ul><li>Catálogo original, licenciado y sus derechos.</li><li>Infraestructura en la nube y red de entrega Open Connect.</li><li>Apps, reproductor web y software de video.</li><li>Sistemas de recomendación y datos de uso.</li><li>Marca, talento creativo y equipos técnicos.</li></ul><details class="detail"><summary>Ver contexto</summary><p>Open Connect es la red de distribución de contenido de Netflix: acerca el video a los usuarios mediante colaboración con proveedores de internet.</p></details></article>
+      <article class="block value"><div class="card-top"><span class="symbol" aria-hidden="true">✦</span><span class="number">04 / EXPERIENCIA</span></div><h2>Propuesta de valor</h2><p class="promise">Tu entretenimiento. Múltiples pantallas.</p><ul><li><strong>Acceso multiplataforma:</strong> móvil, tablet, computadora, Smart TV y consola.</li><li><strong>Continuidad:</strong> retoma títulos entre dispositivos compatibles.</li><li><strong>Variedad:</strong> originales y contenido licenciado bajo demanda.</li><li><strong>Descubrimiento:</strong> recomendaciones según cada perfil.</li><li><strong>Flexibilidad:</strong> planes con distintas prestaciones.</li><li><strong>Sin conexión:</strong> descargas de títulos en dispositivos y planes compatibles.</li></ul><details class="detail"><summary>Ver contexto</summary><p>Multiplataforma significa acceder desde distintos sistemas y pantallas. La reproducción simultánea, calidad y descargas dependen del plan; el catálogo varía por región.</p></details></article>
+      <article class="block relations"><div class="card-top"><span class="symbol" aria-hidden="true">♡</span><span class="number">05 / VÍNCULO</span></div><h2>Relaciones con clientes</h2><ul><li>Perfiles con listas e historial propios.</li><li>Recomendaciones personalizadas.</li><li>Gestión de plan, pagos y cancelación online.</li><li>Centro de ayuda y atención al cliente.</li><li>Perfiles infantiles y controles parentales.</li></ul><details class="detail"><summary>Ver contexto</summary><p>La personalización ayuda a descubrir títulos. El autoservicio permite administrar la suscripción y resolver necesidades habituales.</p></details></article>
+      <article class="block channels"><div class="card-top"><span class="symbol" aria-hidden="true">▣</span><span class="number">06 / ACCESO</span></div><h2>Canales</h2><ul><li><strong>Android e iOS / iPadOS:</strong> apps para móviles y tablets.</li><li><strong>Computadoras:</strong> Netflix.com en navegadores compatibles.</li><li><strong>TV:</strong> apps en Smart TV, consolas y reproductores compatibles.</li><li><strong>Adquisición:</strong> web, tiendas de apps, campañas y socios.</li></ul><details class="detail"><summary>Ver contexto</summary><p>El streaming llega por Internet. La tienda distribuye la app; el registro y la contratación pueden requerir el sitio web según el dispositivo.</p></details></article>
+      <article class="block segments"><div class="card-top"><span class="symbol" aria-hidden="true">◎</span><span class="number">07 / AUDIENCIAS</span></div><h2>Segmentos de clientes</h2><ul><li><strong>Suscriptores:</strong> personas y hogares que pagan el servicio.</li><li><strong>Usuarios del hogar:</strong> adultos, jóvenes y niños con perfiles.</li><li><strong>Fans:</strong> audiencias de series, cine y documentales.</li><li><strong>Usuarios multiplataforma:</strong> alternan entre TV, web y móvil.</li><li><strong>Usuarios según presupuesto:</strong> eligen prestaciones y anuncios.</li><li><strong>Anunciantes:</strong> marcas en mercados con oferta publicitaria.</li></ul><details class="detail"><summary>Ver contexto</summary><p>El titular paga la suscripción; los perfiles personalizan el uso dentro de la cuenta. Los anunciantes son clientes comerciales de la oferta publicitaria.</p></details></article>
+      <article class="block costs"><div class="card-top"><span class="symbol" aria-hidden="true">↘</span><span class="number">08 / INVERSIÓN</span></div><h2>Estructura de costos</h2><ul class="wide-list"><li><strong>Contenido:</strong> producción, adquisición de licencias, doblaje y subtítulos.</li><li><strong>Tecnología:</strong> nube, entrega de video, desarrollo y seguridad.</li><li><strong>Marketing:</strong> campañas, lanzamientos y captación de suscriptores.</li><li><strong>Operación:</strong> personal, atención al cliente, pagos y administración.</li></ul><details class="detail"><summary>Ver contexto</summary><p>Los contenidos producidos y licenciados generan costos a lo largo de su utilización. La tecnología sostiene el servicio y su distribución a escala.</p></details></article>
+      <article class="block income"><div class="card-top"><span class="symbol" aria-hidden="true">↗</span><span class="number">09 / MONETIZACIÓN</span></div><h2>Fuentes de ingresos</h2><ul class="wide-list"><li><strong>Suscripción recurrente:</strong> pagos mensuales por acceso al servicio.</li><li><strong>Planes:</strong> Estándar y Premium; opción con anuncios donde esté disponible.</li><li><strong>Publicidad:</strong> venta de espacios en experiencias con anuncios.</li><li><strong>Miembros extra:</strong> cargos adicionales en planes y países elegibles.</li></ul><details class="detail"><summary>Ver contexto</summary><p>Los planes diferencian calidad de video, reproducción simultánea y otras funciones. Nombres, precios y disponibilidad varían por país y proveedor.</p></details></article>
+    </section>
+    <footer class="foot"><p><span class="status">●</span> Versión final · Síntesis del modelo de negocio</p><p>9 bloques · Contenido + tecnología + suscripción</p></footer>
+    <details class="sources"><summary>Alcance y fuentes de referencia</summary><p>Canvas educativo: la organización en bloques es una interpretación del negocio, no un documento oficial de Netflix. Referencias oficiales consultadas el 30 de septiembre de 2026. Se omiten precios para mantener el enfoque en el modelo.</p><p><a href="https://help.netflix.com/es/node/412" target="_blank" rel="noopener noreferrer">Servicio y descargas</a> · <a href="https://help.netflix.com/es/node/14361" target="_blank" rel="noopener noreferrer">Dispositivos compatibles</a> · <a href="https://help.netflix.com/es/node/24926" target="_blank" rel="noopener noreferrer">Planes y precios</a> · <a href="https://help.netflix.com/es/node/126831" target="_blank" rel="noopener noreferrer">Publicidad</a> · <a href="https://openconnect.netflix.com/es_mx/" target="_blank" rel="noopener noreferrer">Open Connect</a> · <a href="https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/nflx-20251231.htm" target="_blank" rel="noopener noreferrer">Informe anual 2025: contenido y costos</a></p></details>
+  </main>
+  <script>
+    const themeButton = document.getElementById('theme');
+    themeButton.addEventListener('click', () => {
+      const light = document.body.classList.toggle('light');
+      themeButton.textContent = light ? 'Tema oscuro' : 'Tema claro';
+      themeButton.setAttribute('aria-pressed', String(light));
+    });
+    document.getElementById('print').addEventListener('click', () => window.print());
+    const blocks = [...document.querySelectorAll('.block')];
+    const selectionStatus = document.getElementById('selection-status');
+    const clearButton = document.getElementById('clear-selection');
+    let selectedBlock = null;
+    function selectBlock(block) {
+      selectedBlock = selectedBlock === block ? null : block;
+      blocks.forEach(card => {
+        const selected = card === selectedBlock;
+        card.classList.toggle('selected', selected);
+        card.querySelector('.select-block').setAttribute('aria-pressed', String(selected));
+      });
+      clearButton.disabled = !selectedBlock;
+      selectionStatus.textContent = selectedBlock
+        ? 'Bloque seleccionado: ' + selectedBlock.querySelector('h2').textContent + '. Abre «Ver contexto» para ampliar la información.'
+        : 'Selecciona una tarjeta o su título para destacar el bloque.';
+    }
+    blocks.forEach((block, index) => {
+      const heading = block.querySelector('h2');
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'select-block';
+      button.textContent = heading.textContent;
+      button.setAttribute('aria-pressed', 'false');
+      heading.id = 'block-title-' + (index + 1);
+      block.setAttribute('aria-labelledby', heading.id);
+      heading.replaceChildren(button);
+      button.addEventListener('click', () => selectBlock(block));
+      block.addEventListener('click', event => {
+        if (!event.target.closest('button, details, a')) selectBlock(block);
+      });
+    });
+    clearButton.addEventListener('click', () => {
+      const previousButton = selectedBlock?.querySelector('.select-block');
+      selectBlock(null);
+      previousButton?.focus();
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && selectedBlock) selectBlock(null);
+    });
+  </script>
+</body>
+</html>
