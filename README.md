@@ -27,6 +27,8 @@ Las actividades documentan el uso de herramientas, metodologías y tecnologías 
 |  01 | Metodología de evaluación de la materia                      | Revisión de la forma en que se evaluará la materia durante el cuatrimestre.                                                                                                                                                                                                          |   05   | Completada ✅ |
 |  02 | [Boceto de Arquitectura con Archify](./Practica02/README.md) | Instalación y configuración de Archify con interacción mediante Codex CLI. Se generó un diagrama arquitectónico interactivo que representa la aplicación móvil, autenticación, API, bases de datos, mapas, infraestructura de desarrollo, flujos principales y límites de confianza. |   24   | Completada ✅ |
 
+| 03 |	Practica03 - Boceto de Modelo Canvas con Archify	Los estudiantes realizarán un aviso para solicitar el modelo bussiness canvas para una herramienta multiplataforma que existe o usa en su vida cotidianda. |	10 |	Completada ✅ |
+
 
 ## Repositorio
 

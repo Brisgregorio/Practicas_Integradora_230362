@@ -2,7 +2,7 @@
 
 **Aplicación seleccionada:** Netflix  
 **Herramienta:** Archify  
-**Entregable:** [Business Model Canvas de Netflix](canvas/business_model_canvas_netflix.html)
+**Entregable:** [Business Model Canvas de Netflix](https://Brisgregorio.github.io/Practicas_Integradora_230362/Practica03/canvas/business_model_canvas_netflix.html)
 
 > **Alcance:** esta documentación se basa en la inspección del código del HTML y del README previo. No se localizaron los dos prompts originales ni una copia del primer modelo. Las etapas correspondientes se dejan pendientes de evidencia, sin reconstruir instrucciones o resultados. No se realizó una validación visual en navegador.
 
