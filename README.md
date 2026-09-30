@@ -10,25 +10,23 @@ Las actividades documentan el uso de herramientas, metodologías y tecnologías 
 
 ## Información de la materia
 
-| Campo          | Detalle                                        |
-| -------------- | ---------------------------------------------- |
-| **Materia**    | Integradora                                    |
-| **Carrera**    | Ingeniería en Desarrollo y Gestión de Software |
-| **Grupo**      | 10.º A                                         |
-| **Estudiante** | Brisa Nallely García Gregorio                  |
-| **Matrícula**  | 230362                                         |
-| **Docente**    | M.T.I. Marco A. Ramírez Hernández              |
-| **Periodo**    | Septiembre–Diciembre 2026                      |
+| Campo | Detalle |
+| --- | --- |
+| **Materia** | Integradora |
+| **Carrera** | Ingeniería en Desarrollo y Gestión de Software |
+| **Grupo** | 10.º A |
+| **Estudiante** | Brisa Nallely García Gregorio |
+| **Matrícula** | 230362 |
+| **Docente** | M.T.I. Marco A. Ramírez Hernández |
+| **Periodo** | Septiembre–Diciembre 2026 |
 
 ## Tabla de prácticas
 
-| N.º | Nombre de la práctica                                        | Descripción                                                                                                                                                                                                                                                                          | Firmas |    Estatus   |
-| --: | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----: | :----------: |
-|  01 | Metodología de evaluación de la materia                      | Revisión de la forma en que se evaluará la materia durante el cuatrimestre.                                                                                                                                                                                                          |   05   | Completada ✅ |
-|  02 | [Boceto de Arquitectura con Archify](./Practica02/README.md) | Instalación y configuración de Archify con interacción mediante Codex CLI. Se generó un diagrama arquitectónico interactivo que representa la aplicación móvil, autenticación, API, bases de datos, mapas, infraestructura de desarrollo, flujos principales y límites de confianza. |   24   | Completada ✅ |
-
-| 03 |	Practica03 - Boceto de Modelo Canvas con Archify	Los estudiantes realizarán un aviso para solicitar el modelo bussiness canvas para una herramienta multiplataforma que existe o usa en su vida cotidianda. |	10 |	Completada ✅ |
-
+| N.º | Nombre de la práctica | Descripción | Firmas | Estatus |
+| ---: | --- | --- | :---: | :---: |
+| 01 | Metodología de evaluación de la materia | Revisión de la forma en que se evaluará la materia durante el cuatrimestre. | 05 | Completada ✅ |
+| 02 | [Boceto de Arquitectura con Archify](./Practica02/README.md) | Instalación y configuración de Archify con interacción mediante Codex CLI. Se generó un diagrama arquitectónico interactivo que representa la aplicación móvil, autenticación, API, bases de datos, mapas, infraestructura de desarrollo, flujos principales y límites de confianza. | 24 | Completada ✅ |
+| 03 | [Boceto de Modelo Canvas con Archify](./Practica03/README.md) | Elaboración de un Business Model Canvas de Netflix como plataforma multiplataforma mediante Archify y Codex CLI. Se realizó un prompt inicial, revisión del modelo obtenido, mejora del prompt y generación de una versión final interactiva del Business Model Canvas. | 10 | Completada ✅ |
 
 ## Repositorio
 
