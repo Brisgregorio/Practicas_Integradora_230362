@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Galería interactiva con 24 sketches de una aplicación móvil inspirada en Netflix y dos roles académicos.">
+  <title>Netflix — Sketches de aplicación móvil · Práctica 06</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Netflix sketches, inicio"><span>NETFLIX</span><small>PRÁCTICA 06</small></a>
+    <nav class="header-links" aria-label="Navegación principal"><a href="#galeria">Galería</a><a href="#roles">Roles</a><a href="README.md">README</a></nav>
+  </header>
+  <main id="top">
+    <section class="hero-intro gallery-hero" aria-labelledby="page-title">
+      <div class="hero-copy"><p class="kicker"><span class="red-pip"></span> DISEÑO DE PANTALLAS · APLICACIÓN MÓVIL</p><h1 id="page-title"><span>NETFLIX</span> — SKETCHES DE<br class="desktop-break"> APLICACIÓN MÓVIL</h1><p class="intro-text">24 pantallas móviles diseñadas para recorrer una experiencia de streaming: desde el primer acceso hasta el catálogo, la reproducción y la gestión académica de contenido.</p><a class="primary-link" href="#galeria">Ver los 24 sketches <span aria-hidden="true">↓</span></a></div>
+      <div class="hero-art" role="img" aria-label="Composición de carteles cinematográficos de muestra"><div class="art-poster art-one"><b>STRANGER<br>THINGS</b><small>UNA AVENTURA EXTRAÑA</small></div><div class="art-poster art-two"><b>WEDNESDAY</b><small>ALGO EXTRAORDINARIO</small></div><div class="art-poster art-three"><b>EL JUEGO</b><small>¿HASTA DÓNDE LLEGARÍAS?</small></div><div class="art-shade"></div></div>
+      <div class="role-summary" id="roles"><div class="summary-item"><span class="summary-number">24</span><span><b>sketches individuales</b><small>Diseños móviles en detalle</small></span></div><div class="summary-item"><span class="role-mark user-mark">U</span><span><b>Usuario / suscriptor</b><small>17 pantallas, incluido acceso</small></span></div><div class="summary-item"><span class="role-mark admin-mark">A</span><span><b>Administrador académico</b><small>7 pantallas de demostración</small></span></div><span class="academic-tag">PROTOTIPO ACADÉMICO</span></div>
+    </section>
+
+    <section class="gallery-section" id="galeria" aria-labelledby="gallery-title">
+      <div class="gallery-heading"><div><p class="section-kicker">PANTALLAS MÓVILES · 01—24</p><h2 id="gallery-title">Galería de sketches</h2><p>Cada tarjeta muestra una pantalla completa dentro de un teléfono. Selecciona “Ampliar sketch” para recorrerla en detalle.</p></div><span class="gallery-count"><b id="visible-count">24</b><span>/ 24 PANTALLAS</span></span></div>
+      <div class="gallery-toolbar"><div class="filter-group" role="group" aria-label="Filtrar sketches por rol"><button class="filter active" data-filter="all" aria-pressed="true">Todas <span>24</span></button><button class="filter" data-filter="user" aria-pressed="false"><i class="filter-dot user-dot"></i>Usuario</button><button class="filter" data-filter="admin" aria-pressed="false"><i class="filter-dot admin-dot"></i>Administrador</button></div><p>Selecciona una pantalla para verla a tamaño completo</p></div>
+      <div class="sketch-gallery" id="sketch-gallery" aria-live="polite"></div>
+    </section>
+    <p class="academic-disclaimer">Este es un prototipo académico inspirado en la interfaz visual de Netflix. La autenticación, el catálogo administrativo, la lista y la reproducción se simulan con datos ficticios. El rol de administrador no representa una función pública de Netflix.</p>
+  </main>
+  <div class="lightbox" id="sketch-lightbox" hidden>
+    <div class="lightbox-backdrop" data-close-lightbox></div>
+    <section class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+      <header class="lightbox-header"><div><p class="section-kicker">SKETCH AMPLIADO <span id="lightbox-number">01</span></p><h2 id="lightbox-title">Splash Screen</h2><span class="lightbox-role" id="lightbox-role">USUARIO</span></div><button class="lightbox-close" id="close-lightbox" aria-label="Cerrar vista ampliada">×</button></header>
+      <div class="lightbox-content"><button class="gallery-arrow previous" id="previous-sketch" aria-label="Sketch anterior">‹<small>ANTERIOR</small></button><div class="large-device-wrap"><div class="device device-large"><div class="device-island"></div><div class="device-status"><span>9:41</span><span aria-hidden="true">●●●　▰</span></div><div class="mock-screen" id="large-screen"></div><div class="device-home"></div></div></div><button class="gallery-arrow next" id="next-sketch" aria-label="Sketch siguiente">›<small>SIGUIENTE</small></button></div>
+      <p class="lightbox-description" id="lightbox-description"></p>
+    </section>
+  </div>
+  <footer class="site-footer"><a class="footer-logo" href="#top">N</a><span>Práctica 06 · 24 sketches móviles · 2 roles</span><span>HTML · CSS · JavaScript</span><a href="README.md">Documentación ↗</a></footer>
+</body>
+</html>
