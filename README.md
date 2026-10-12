@@ -6,7 +6,7 @@
 
 Este repositorio contiene las prácticas desarrolladas durante la materia de **Integradora**, correspondiente a la carrera de **Ingeniería en Desarrollo y Gestión de Software** de la Universidad Tecnológica de Xicotepec de Juárez.
 
-Las actividades documentan el uso de herramientas, metodologías y tecnologías para diseñar soluciones de software, gestionar su arquitectura y aplicar buenas prácticas de desarrollo y control de versiones.
+Las actividades documentan el uso de herramientas, metodologías y tecnologías para diseñar soluciones de software, gestionar su arquitectura, representar modelos de negocio, diseñar interfaces de usuario y aplicar buenas prácticas de desarrollo y control de versiones mediante Git y GitHub.
 
 ## Información de la materia
 
@@ -24,14 +24,30 @@ Las actividades documentan el uso de herramientas, metodologías y tecnologías 
 
 | N.º | Nombre de la práctica | Descripción | Firmas | Estatus |
 | ---: | --- | --- | :---: | :---: |
-| 01 | Metodología de evaluación de la materia | Revisión de la forma en que se evaluará la materia durante el cuatrimestre. | 05 | Completada ✅ |
+| 01 | Metodología de evaluación de la materia | Revisión de los criterios y la forma de evaluación de la materia durante el cuatrimestre. | 05 | Completada ✅ |
 | 02 | [Boceto de Arquitectura con Archify](./Practica02/README.md) | Instalación y configuración de Archify con interacción mediante Codex CLI. Se generó un diagrama arquitectónico interactivo que representa la aplicación móvil, autenticación, API, bases de datos, mapas, infraestructura de desarrollo, flujos principales y límites de confianza. | 24 | Completada ✅ |
-| 03 | [Boceto de Modelo Canvas con Archify](./Practica03/README.md) | Elaboración de un Business Model Canvas de Netflix como plataforma multiplataforma mediante Archify y Codex CLI. Se realizó un prompt inicial, revisión del modelo obtenido, mejora del prompt y generación de una versión final interactiva del Business Model Canvas. | 10 | Completada ✅ |
+| 06 | [Diagrama de navegación y 24 sketches de Netflix](./Practica06/README.md) | Diseño de un diagrama de navegación y 24 sketches de pantallas para una aplicación móvil inspirada en Netflix. Incluye la representación visual de las interfaces, los colores y el estilo de la plataforma, así como los flujos de navegación de dos roles de usuario. Se integraron los cambios mediante Git y GitHub. | 20 | Completada ✅ |
+
+> **Nota:** Los números de firmas de las prácticas 01, 02 y 03 corresponden a los datos registrados previamente. Los valores de las prácticas 04, 05 y 06 deben completarse cuando se confirmen las firmas correspondientes.
+
+## Tecnologías y herramientas utilizadas
+
+- **Git y GitHub:** control de versiones, trabajo con ramas y fusión de cambios.
+- **Archify:** apoyo en la elaboración de diagramas y modelos interactivos.
+- **Codex CLI:** asistencia en la generación y mejora de artefactos de diseño.
+- **HTML, CSS y JavaScript:** desarrollo y presentación de recursos web interactivos.
+- **Markdown:** documentación de las prácticas mediante archivos README.
 
 ## Repositorio
 
 [Practicas_Integradora_230362](https://github.com/Brisgregorio/Practicas_Integradora_230362)
 
+## Autora
+
+**Brisa Nallely García Gregorio**  
+Matrícula: 230362  
+Grupo: 10.º A — Ingeniería en Desarrollo y Gestión de Software
+
 ---
 
-**Brisa Nallely García Gregorio — Matrícula 230362**
+*Repositorio académico de prácticas de la materia Integradora, correspondiente al periodo septiembre–diciembre de 2026.*
